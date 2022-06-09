@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Thais Rosana</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <img src="Patrono.jpg" alt="Patrono Snape" class="photo">
+        <h1 id="title">Thais Rosana</h1>
+        </header>
+        <section>
+            <header>
+                <h2 class="subtitle">Posts</h2>
+            </header>
+            <article class="post">
+                <header>
+                    <h3 class="post_title">Post #1</h3>
+                    <img src="Harry_Potter.png" alt="Logo do Harry Potter" class="post_image">
+                </header>
+                <p class="post_content">É preciso ter coragem para enfrentar os inimigos, e ainda mais para enfrentar os amigos.
+                        <a href="https://www.awebic.com/frases-dos-filmes-harry-potter/"target="blank">São as nossas escolhas que revelam o que realmente somos, muito mais do que as nossas qualidades.</a>
+                        Não tenha pena dos mortos. Tenha pena dos vivos, e acima de tudo, daqueles que vivem sem amor.
+                        É o medo do desconhecido que nós tememos quando olhamos para a morte e a escuridão, nada mais.
+                        Haverá um momento em que teremos que escolher entre o que é fácil e o que é certo.
+                    </p>
+            </article>
+        </section>
+        <footer>
+            <ul class="contact_list">
+                <li>
+                    <a href="mailto:thais.rosana@hotmail.com"></a>thais.rosana@hotmail.com</li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/thais-rosana-94863bb3" target="_blank">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/thais.msor/" target="_blank">Facebook</a>
+                    </li>
+            </ul>
+        </footer>
+    </body>
+</html>

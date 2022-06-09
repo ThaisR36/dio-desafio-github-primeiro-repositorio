@@ -1,0 +1,17 @@
+JavaScript
+
+Linguagem interpretada - rodada em tempo real - disponibilizado instantaneamente
+
+// - para comentar uma linha (ctrl + barra)
+/* - comentar várias linhas
+*/ - fechar comentário
+
+variáveis = x, y, z
+constante = valor fixo
+
+function + nome () {}
+function + soma (a, b) {
+	return a + b
+}
+
+soma (3,5);

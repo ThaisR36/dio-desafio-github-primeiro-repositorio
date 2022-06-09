@@ -1,0 +1,30 @@
+GitHub - plataforma em nuvem que guarda o seu código
+
+Atalhos 
+
+dir = lista a pasta
+cd + pasta = lista a pasta especifica
+Mkdir + nome = cria pasta
+cls = limpa 
+del + pasta = deleta arquivo
+rmdir + pasta /s /q = deleta repositório
+CD .. = volta uma pasta
+echo hello > hello.txt = cria um arquivo
+
+SHA1 - código de 40 caracteres
+Blob (objeto) - metadados do GIT - \0 - contém o SHA1
+Tree - armazena blobs - guarda o nome - aponta para blobs (bolhas) ou outras árvores
+Mudar algo no arquivo muda tudo
+Commit - aponta para uma árvore, parente, autor ou mensagem - tem nome, data e horário de criação
+
+Chaves SSH e Tokens
+Chave SSH - Forma segura e criptografada de conectar duas máquinas
+
+Atalhos Git
+
+git init - iniciar
+git add - mover arquivos
+git commit - criar commit
+git status - status do arquivo
+
+

@@ -1,0 +1,11 @@
+Técnica
+Linear
+Estruturada
+Modular
+
+
+-a lista arquivos ocultos
+HTML -  estrutura básica de qualquer página na web
+md - extensão markdown
+
+
