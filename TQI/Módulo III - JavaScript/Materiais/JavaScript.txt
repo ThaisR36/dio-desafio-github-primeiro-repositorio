@@ -15,3 +15,176 @@ function + soma (a, b) {
 }
 
 soma (3,5);
+
+Linguagem de programação de alto nível, integra desenvolvimento de apps e páginas web.
+serve para criar scripts dinâmicos.
+
+Boas práticas:
+- Externar o script
+- Carregar o script ao final do body
+
+
+Operadores: Sinais para manipular valor ou validar condição
+- Atribuição: =, += , *=, /=, %= (módulo é o resto da divisão)
+- Aritimética: +, -, *, **, /, % (módulo), ++ (incrementar), -- (decrementar)
+- Comparação: == (igual a), === (mesmo valor e mesmo tipo), != (diferente), !== (valor e tipos diferentes), >, <, >=, <=
+- Lógica: && ("e" lógico),  || ("ou" lógico), ! ("não" lógico)
+- Condicional (ternário): condição ? expressão1 : expressão 2
+
+4:40 - 5:50 - 10:00 - 13:00 - 14:32 - 16:00 - Atividade prática (sintaxe)
+
+
+Váriaveis
+Var e let são usados para declarar valores dinâmicos
+let é só dentro do bloco
+Hoisting - atribuir valor para variável sem declarar
+
+Constantes
+SNAKE_UPPER_CASE
+Escopo de bloco
+Não faz hoisting
+
+var (escopo global ou local - pode redeclarar, reatribuir e hoisting)
+const (escopo bloco - não pode redeclarar, reatribuir e hoisting)
+let (escopo bloco - pode reatribuir - não pode redeclarar e hoisting)
+
+Estruturas de dados
+Javascript é uma linguagem dinâmica
+
+Tipos primitivos não tem métodos - letras minúsculas - números, strings, booleans
+Compostos, não-primitivos, complexos - objetos e arrays
+
+Strings - geralmente usadas para textos
+Declarados entre aspas ou crases
+Indice começa do 0 (qual posição de cada letra) Tamanho começa do 1 (quantas letras tem)
+
+Números - inteiros ou decimais (sem aspas)
+
+Booleans - verdadeiro ou falso
+
+Arrays (vetores) - lista iterável de elementos
+Iterável - Fazer operações em cada um dos elementos
+
+Objetos
+= { - chave + nome + valor
+Estrutura tipo "chave e valor"
+
+Empty - declarar sem valor
+Null - quer que o valor não exista, seja falso - declara e define como falso ou não existente
+Undefined - valor não existe
+
+Atividade - verificar palíndromo (frase lida da mesma forma quando inversa)
+07:00 - 15:00
+Atividade 2 - 07:00
+
+
+Funções
+function nome (parâmetros) {
+ // instruções
+}
+
+return; //valor de retorno
+
+Função Anônima
+const soma = function (a,B) {
+ return a+b;
+}
+
+
+Função Autoinvocável (IIFE)
+Uma função anõnima entre parênteses, seguida por outro par de parênteses
+
+
+Função Callback
+Função passada como argumento para outra
+
+
+Parâmetros
+Valores padrão
+Arguments - array com todos os parâmetros passados quando a função foi invocada
+
+Arrays e Objetos
+Spread: forma de lidar separadamente com elementos
+Rest: combina os argumentos em um array
+Object Destructuring: {} filtra apenas os dados que nos interessam em um objeto 
+
+
+Loops
+if/else
+switch/case: equivale a uma comparação de tipo e valor
+	     sempre precisa de um valor "default"
+	     ideal para comparar muitos valores
+for: loop dentro de elementos iteráveis (arrays, strings)
+for...in: entre propriedades enumeráveis de um objeto
+for...off: loop entre estruturas iteráveis (arrays, strings)
+while: executa instruções até que a condição se torne falsa
+Do while: executa instruções até que a condição se torne falsa, porém a primeira execução sempre ocorre
+
+This - é uma referência de contexto (02:17)
+Manipulando seu valor: Apply, Call, Bind
+
+Arrow functions - não faz hoisting
+=>
+Atividade: 02:38 - 05:30
+
+
+Tipos de erro no Javascript
+ECMAScrip Error: erros que ocorrem em tempo de execução
+		 Composto por mensagem, nome, linha e call stack
+DOMException: erros relacionados ao Document Object Model (DOM)
+
+
+Tratamento de erros
+Return: retorna um string com o texto inválida
+Throw: trata a string como um erro
+Try...catch: um pedaço do código
+Finally: instrução chamada independente de ter erro ou não
+
+
+Error: aceita os parâmetros mensagem, nome do arquivo, número da linha (todos são opções)
+Cria uma constante e da um nome
+
+
+Assincronicidade: que não ocorre ou não se efetiva ao mesmo tempo
+Por padrão o Javascript roda de maneira síncrona
+Promises: objeto de processamento assíncrono. Inicialmente seu valor é desconhecido, pode ser resolvido e rejeitado.
+3 estados: pending, fulfilled, rejected
+Async/await: funções assíncronas precisam dessas duas plavras-chave
+
+APIs: Application Programming Interface
+Forma de intermediar os resultados do back-end com o que é apresentado no front-end
+Você consegue acessá-las por meior de URLs
+JSON: JavaScript Object Notation
+fetch (url, options) - retorna uma promise
+Operações no banco: POST, GET,PU, DELETE, etc)
+Atividade: 06:00
+
+
+https://github.com/stebsnusch/basecamp-javascript
+
+Paradigmas da programação: Imperativo (como você vai fazer) e Declarativo (o que você vai fazer)
+Orientação a objetos - Imperativo
+Os programas são objetos que possuem uma série de propriedades.
+Pilares:herança, polimorfismo, encapsulamento, abstração
+Abstração: transformar um problema complexo em simples - simplificar / generalizar - (carro > veiculo de rodas > veiculo)
+Herança: o objeto filho herda propriedades e métodos do objeto pai
+Encapsulamento: cada classe tem propriedades e métodos independentes do restante do código.
+Polimorfismo: objetos podem herdar a mesma classe pai, mas se comportam de forma diferente quando invocamos seus métodos
+              (todos se comunicam, mas de formas diferentes - gato, pato, cachorro)
+
+OOJS - Object-oriented JavaScript
+Protótipos: esqueleto de todos os objetos em Javascript. Todos os objetos Javascript herdam propriedades e métodos de um prototype
+	    O objeto Object.prototype está no topo desta cadeia
+Cadeia de protótipos: sabiá > pássaro > animal > function.prototype > object.prototype
+Classes: syntatic sugar - uma sintaxe feita para facilitar a escrita
+	 Javascript não possui classes nativamente. Todas as classes são objetos e as heranças se dão por protótipos
+
+
+Atividade: 03:10 - 04:23 - 05:03 - 06:45 - 08:00 - 09:20
+
+
+
+
+
+
+
