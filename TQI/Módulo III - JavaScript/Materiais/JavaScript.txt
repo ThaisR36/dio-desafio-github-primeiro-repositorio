@@ -183,6 +183,28 @@ Classes: syntatic sugar - uma sintaxe feita para facilitar a escrita
 Atividade: 03:10 - 04:23 - 05:03 - 06:45 - 08:00 - 09:20
 
 
+DOM: Document Object Model - O DOM HTML é um padrão de como acessar e modificar os elementos HTML de uma página
+Nós que representam cada elemento dentro de um HTML
+DOM vs BOM 
+BOM: Browser Object Model - Tudo que está dentro do objeto window
+
+Estrutura HTML
+Tag: o que representa a parte - body, h1, h2, p
+ID: identificador único
+classe
+
+Métodos - 07:00 (Manipulando a DOM) - anotar tabela
+
+Eventos: qualquer tipo ação que o usuário faz na página
+mouseover e mouseout
+click e dbclick
+eventos de atualização: change e load
+Event listener:diretamente no Javascript, cria um evento que vai ser adicionado no momento em que o usuário realizar determinada ação
+Atributo HTML: especifica a função a ser chamada diretamente no elemento HTML
+
+
+
+
 
 
 
