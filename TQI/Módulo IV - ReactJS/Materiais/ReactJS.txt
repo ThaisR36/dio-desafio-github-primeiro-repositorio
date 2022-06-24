@@ -1,0 +1,257 @@
+ NPM - instalar
+
+Reactjs - uma biblioteca JavaScript para criar interface de usuário - 16.8.6 (versão)
+É uma biblioteca e não um framework - a principal função é a criação da interface para o usuário
+É uma linguagem declarativa - está preocupado apenas com o que é exibido na interface do usuário
+É baseado em componentes - pode ser utilizado em qualquer lugar
+
+Configuração
+React Create App
+React Scripts
+Task Runners e Bundler Sizers
+
+Minuto 02:00 aula 2 - 08:50 (finaliza) 
+
+JSX - nem HTML e nem uma string
+const element = <h1>Hello, world!</h1>
+React não separa as tecnologias colocando marcação em arquivos separados, e sim separa conceitos e mantém o código pouco acoplado chamando-os de componentes.
+Não é obrigatório a utilização do JSX
+Sintax Suggar para React.createElement
+
+O browser não interpreta o JSX, para isso é necessário um transpilador para que a aplicação possa entender o código. O mais utilizado é o babel.
+
+
+Minuto 11:00 aula 2 - 14:41 - 17:00 (finaliza) 
+Dentro do JSX é entre {}
+
+Renderização de Elementos
+React DOM
+Nós Raíz
+
+React "pensa" em como a interface deve estar a cada momento ao invés de alterá-la com o tempo, o que faz ter ganho de performance e evita uma série de erros.
+Aula 3 - 06:50 
+Componentes e Props
+Componente: trabalha como função ou classe
+Aula 3 - 10:00
+
+
+Estado e Ciclo de Vida
+Inicialização > Montagem > Atualização > Desmontagem
+Nenhum componente pai ou filho devem saber se outro componente possui estado ou não.
+O estado é apenas local ao componente e caso seja necessário enviar algum atributo para outro então é feito via props.
+Aula 4 - 05:00 até 10:00
+https://github.com/Tautorn/introduction-reactjs
+
+
+Webpack - é um module bundler (um empacotador de módulos para aplicações JS)
+Principais conceitos do Webpack:
+Entry - utilizando grafo, o Webpack precisa de um ponto de entrada para buscar todos os módulos e dependências
+Output - é para determinar quais são os bundlers que o Webpack irá emitir
+Loaders - é para permitir que o Webpack gerencie arquivos que não são Javascript
+Plugins - podem ser utilizados para otimização de pacotes, minificação, injeção de scripts e muitos mais
+Mode - utilizados para abordagem de configuração zero. É possível configurar módulos como production, development ou none
+
+Production trás otimizações internas
+Development - é executado com três plugins: UglifyJsPlugin, ModuleConcatenationPlugin e NoEmitOnerrorsPlugin
+Aula 5 - 03:30
+
+EsLint
+
+Renderização Condicional
+Em React, você pode criar componentes distintos que encapsulam o comportamento que você precisa. Então, você pode renderizar apenas alhuns dos elementos, dependendo do estado da sua aplicação.
+Variáveis de Elementos
+If inline com o Operador Logico &&
+If-Else inline com Operador Condicional
+Evitando que um componente seja Renderizado
+
+
+Listas e Chaves
+Renderizando múltiplos componentes
+Componente de lista básico
+Chaves
+Extraindo componentes com chaves
+Chaves devem ser únicas apenas entre elementos irmãos
+
+Manipulando Eventos
+Manipular eventos em elementos React é muito semelhante a manipular eventos em elementos do DOM. Existem algumams diferenças sintáticas:
+Eventos em React são nomeados usando camelCase ao invés de letras minúsculas
+Com o JSX você passa uma função como manipulador de eventos ao invés de um texto
+Eventos 
+Passando argumentos para manipuladores de eventos
+
+
+Pensando do Jeito React
+Comece com um Mock
+Separe a UI em uma hierarquia de componentes
+Crie uma versão estática em react
+Identifique a representação mínima - mas completa - do State da UI
+Identifique onde o State deve ficar
+Adicione o fluxo de dados inverso
+
+
+Introdução aos React Hooks
+https://github.com/celso-henrique/naruto-quotes-server
+https://github.com/celso-henrique/naruto-quotes-client
+
+
+Trabalhando com States e Effects no ReactJs
+NODE e NPM instalados
+
+O que são hooks? Função que se engancha no seu componente 
+Hook - Gancho 
+Hooks não são obrigatórios
+Componente: função que retorna um bloco de HTML e CSS embutido já trabalhado (função javascript que retorna um bloco de código HTML)
+Componentes React são como funções JavaScript. Eles aceitam entradas como propriedades (chamadas “props”) e retornam novos elementos React, os chamados JSX.
+Permitem que a UI seja dividida em partes independentes e reutilizáveis, ou seja, trata cada parte da aplicação como um bloco isolado, livre de outras dependências externas.
+
+https://github.com/felipeAguiarCode
+
+CSS componentes e elementos - Desenvolvimento de aplicações para internet com ReactJs
+Maneiras de estilização - Inline, Classes, CSS in JS
+Inline: maneira mais prática e direta, ajustes rápidos, teste de estilo - dificil manutenção
+Classes: maneira mais prática e direta - dificil manutenção, pouca flexibilidade, conflitos com nomes
+CSS in JS: facilidade para remover CSS, estilos dinâmicos, performance, injeção automática de prefixos vendor
+
+Stateful vs stateless - Desenvolvimento de aplicações para internet com ReactJs
+Stateful: possui gerenciamento de estados no componente; Construídos usando classes em JS
+Ciclo de vida: Initialization > Mounting > Updation > Unmounting
+Stateless: não possui gerenciamento de estado no componente; Construídos usando funções em JS
+A nomenclatura foi atualizada: class components; function components
+Com hooks, estados são manipulados em function components
+
+Formulários - Desenvolvimento de aplicações para internet com ReactJs
+Formulários mantem um estado interno
+Em HTML, <input>, <textarea> e <select> têm um estado interno
+Em React, podemos controlar o estado: state - setState
+Componente controlado: tanto select, input ou textarea aceitam atributo value; Podemos mudar esse valor usando o atributo onChange
+Componente não-controlado: a tag input é read-only
+Bibliotecas: formik - redux-forms
+
+
+Node.js, React, Redux Dev Tools Chrome
+Introdução ao Flux - Desenvolvimento de aplicações para internet com ReactJs
+
+Flux é um padrão de projeto para tráfego de dados de maneira unidirecional
+Action: é como um telégrafo - ele formata a mensagem a ser enviada
+Dispatcher: é como um telefonista - ele sabe todos os callbacks para diferentes Stores
+Store: é como um gerente super controlador - ele guarda a informação e todas alterações têm que ser feitas por ele mesmo, mais ninguém
+View: é como um gerente irtermediário (middleware) que recebe as notificações da store e passa os dados para as visões abaixo dela
+Diversas implementações: Redux (mais popular); Reflux; Mobx; Vuex (baseado em Redux e Elm); NgRx/store (baseada em Redux e RxJS)
+Servem para comunicação entre componentes; Centralizam a informação; "Flux libraries are like glasses: you'll know when you need them." Dan Abramov
+
+O que é Redux? - Desenvolvimento de aplicações para internet com ReactJs
+Criado por Dan Abramov e Andrew Clark em 2015
+Redux é uma implementação de Flux - possui algumas diferentes
+3 princípios: Single source of truth: uma única store; State é read-only; Mudanças são feitas com pure functions
+Em Reduz actions são como o Flux; Diferença: actions não enviam a action em si para o dispatcher; Retornam um objeto de action formatado
+Store: Em Flux: diversas Stores; Em Redux: uma única Store; A Store aqui cuida de toda a árvore de estados; Os reducer que cuidam de descobrir qual estado muda
+Reducers: Em Redux não há dispatcher (simplifica e divide o trabalho da Store); Os estados aqui são imutáveis;
+	  A store se conecta ao root reducer, que divide os estados em pequenos reducers para descobrir como lidar com esse estado
+Views: Em React, adiciona na camada de View 3 novos conceitos para conectar a View à Store: Provider, connect; selector
+
+Comunicação avançada em aplicações
+Rest HTTP com React - Desenvolvimento de aplicações para internet com ReactJs
+APIs HTTP: Servem para conectar a um ou mais servidores HTTP - GET, POST, DELETE, PUT
+	   Fetch API
+	   Axios
+Fetch API: nativa do Browser; Oferece uma alternativa ao XMLHttpRequest() e jQuery.ajax(); Suporta a Service Workers;
+	   Algumas diferenças: Não envia nem recebe cookies (precisa definir a opção credentials); Não rejeita o status do erro HTTP
+Axios: Lib de HTTP API; Cross-browser; Pode monitorar o progresso de um request; Melhir tratamento de erros; Melhor teste
+
+Imutabilidade e Redux - Desenvolvimento de aplicações para internet com ReactJs
+Imutabilidade: Uma vez criada, uma coleção não pode ser alterada;
+	       Novas coleções podem ser criadas a partir de uma coleção anterior e uma mutação (setter) como um conjunto;
+	       Novas coleções são criadas usando o máximo possível da estrutura original, reduzindo a cópia e aumentando a performance
+Benefícios: Performance; Programação mais simples; Debugging mais simples (detecção de mudanças)
+Se você quer performance em React, use dados imutáveis; Você consegue usando o shouldComponentUpdate ou React.PureComponent
+Problema: O PureComponent vai fazer uma comparação rasa entre os valore antigos e novos de this.props.words
+	  O código muda words no handleClick do WirkAdder, mas mesmo mudando as palavras elas serão considerdas como iguais
+Solução: Evitar mudar valores ou estado
+Biblioteca que fornece coleções persistentes e imutáveis; Permite detecção barata de alterações nos objetos
+Outras libs: Immer; Immutability-helper; Seamless-immutable
+Imutabilidade é pré-requisito no Redux: Reduz e React-Reduz utilizam comparações rasas; Manipulação de dados mais segura; Time-travel debugging
+Os reducers dividem o objeto de estados em domínios por chaves
+combineReducers checa mudanças usando comparação rasa: fazem a interação nos reducers; Criam um novo objeto de estados a partir dos estados retornados por cada reducer
+connect gera componentes que fazem comparação rasa com o estado root
+Retornam o valor para a função mapStateToProps, verificando aqueles que precisam de uma operação de re-render
+
+
+Redux + Rest - Desenvolvimento de aplicações para internet com ReactJs
+Suponha um sistema de notificações ou um sistema de logging
+Você precisa manter a sincronia, independente da tela onde estiver
+Uma maneira de resolver facilmente seria armazenar os dados do serviço no Redux
+Provê uma camada entre o disparo de uma ação e o momento que ela atinge o reducer
+Utilizadas para uma variedade de funções, entre elas chamadas de APIs de serviço
+3 diferenças do applyMiddleware() do Redux:
+  Só expõe um subconjunto da Store API para o middleware: dispatch e getState
+  Fica dificil saber se store.dispatch(action) vai realmente percorrer a cadeia do middleware de novo
+  Opera em cima de createStore() ao invés da store em si
+Os mais usados são: redux-thunk e redux-saga
+Um thunk é uma função que chama outra função
+
+Conceitos aplicados a qualidade de código e automação de testes em React
+TDD e BDD com Jest
+O que é TDD?
+  Test-Driven Development
+  Antecipar erros a nível de desenvolvimento - teste escrito antes da funcionalidade
+  Não descarta a presença de um tester
+Teste Unitário - Teste End-to-End (E2E)
+TDD - Jest; React-testing-Library; Shallow; Enzyme; Chai; Macha; Selenium; Puppeteer 
+
+O que é BDD?
+  Behavior-Driven Development
+  Teste de especificação - une especificação, teste automatizado e premissa de teste (documento de teste)
+Sintaxe de steps para definir cenários
+Descreve cada funcionalidade por feature (caso de uso)
+BDD - Jest-cucumber; Chai
+
+Debugging - depuração é o processo de encontrar e reduzir defeitos de um software
+Ferramentas - Chrome Devtools; Redux Devtools; React Devtools
+
+
+Tratamento de erros - Resiliência de SW; Segurança
+Tratamento em componentES - Em JS usamos PropTypes; Podemos usar linguagens tipadas como TypeScript, definindo interfaces
+
+
+https://github.com/eduardogc/digital-one-react-intermediario
+
+
+Aprofundando sobre o ciclo de vida do React
+Ciclo de vida: Inicialização > Montagem > Atualização > Desmontagem
+
+Hooks são uma nova edição ao React 16.8. Eles permitem que você use o state e outros recursos do React sem escrever uma classe.
+Regras dos Hooks: Não use Hooks dentro de funções JavaScript comuns. Em vez disso, você pode: Chamar Hooks em componentes React; Chamar Hooks dentro de Hooks customizados
+Seguindo essas regras, você garante que toda lógica de estado (state) no componente seja claramente visível no código fonte.
+Fragments: Um padrão comum no React é que um componente pode retornar múltiplos elementos. Os fragmentos permitem agrupar uma lista de filhos em adicionar nós extras ao DOM.
+Um erro de JavaScript em uma parte da UI não deve quebrar toda a aplicação. Para resolver este problema para usuários do React, o React 16 introduziu um novo conceito de "error boundary"
+Error Boundaries - não capturam erros em:
+		   Manipuladores de evento
+		   Código assíncrono (ex. callbacks de setTimeout ou requestAnimationFrame)
+		   Renderizador no servidor
+		   Erros lançados na própria error boundary (ao invés de em seus filhos)
+Render Props: O termo "render prop" se refere a uma técnica de compartilhar código entre componentes React passando uma prop cujo valor é uma função.
+Um componente com uma render prop recebe uma função que retorna um elemento React e a invoca no momento de renderização, não sendo necessário para o componente implementar uma lógica própria
+Typechecking: Na medida em que sua aplicação cresce, você pode capturar muitos bugs com checagem de tipos.
+	      Em algumas aplicações você pode usar extensões do JavaScript como Flow ou TypeScript para checar os tipos de toda a sua aplicação.
+	      Porém, mesmo se você não usá-las, React possui algumas habilidades de checagem de tipos nativas. 
+Refs e DOM: Com Refs é possível acessar a árvore do DOM e/ou elementos React.
+Quando utilizar: Manipulação de bibliotecas de terceiros; Gerenciamento de inputs (foco), seleção de textos ou reprodução de mídias; animações imperativas 
+Dumb Components: Preocupa-se com a apresentação; Recebem valores via props; Não possuem dependências com o restante da aplicação,
+		 Não especificam como os dados são carregados ou sofrem mutação; Recebem valores e callbacks exclusivamente via props;
+		 Raramente possuem estado, quando precisam de estado é para controlar a interface e não dados de usuário; São escritos na maioria das vezes como componentes funcionais
+		 Exemplos: Button, Card, Sidebar, Footer, List, Menu
+Smart Components: Preocupa-se como as coisas vão funcionar; Podem conter Smart e Dumb Components; Providenciam dados e padrões de apresentação ou outros containers
+		  Na maioria dos casos possuem estado e podem chamar outros fluxos do sistema.	
+		  Exemplos: UserGallery; UserPage; FilterBook; FollowersSidebar, ListCards
+ 
+
+
+
+
+
+
+
+
+
+
+
